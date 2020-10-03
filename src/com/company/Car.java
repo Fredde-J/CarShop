@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Car {
+public abstract class Car implements CarFunctions {
     public int numberOfWheels;
     public int horsePower;
     public int numberOfDoors;
@@ -24,7 +24,5 @@ public abstract class Car {
         this.engineSound=engineSound;
         this.model=model;
     }
-    public void startEngine(){
-        System.out.println("The car makes a "+engineSound+"when it starts and is ready to release "+horsePower+" hp");
-    }
+
 }
