@@ -1,4 +1,8 @@
 package com.company;
 
-public class CarDecorator {
+public class CarDecorator implements CarFunctions {
+    @Override
+    public void startEngine() {
+        
+    }
 }
