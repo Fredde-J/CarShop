@@ -12,4 +12,9 @@ public class Volkswagen extends Car {
     {
         super(numberOfDoors, numberOfSeats, numberOfWheels, horsePower, fuelSource, engineSound, model);
     }
+
+    @Override
+    public void startEngine() {
+        System.out.println("engine starts "+ engineSound);
+    }
 }
