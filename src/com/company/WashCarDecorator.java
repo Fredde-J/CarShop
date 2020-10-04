@@ -1,8 +1,12 @@
 package com.company;
 
 public class WashCarDecorator extends CarDecorator {
+    private Car car;
+    public WashCarDecorator(Car car) {
+        this.car = car;
+    }
 
-    public String washCar (Car car){
-        return "the car is now shinny";
+    public void washCar (){
+        System.out.println("the "+ car.model +" is now shinny");
     }
 }
