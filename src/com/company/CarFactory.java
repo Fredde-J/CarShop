@@ -25,7 +25,14 @@ public class CarFactory {
         switch (color) {
             case "Red":
                 car = new RedCarDecorator(car).setColorRed(car);
+                break;
+            case "Green":
+                car = new GreenCarDecorator(car).setColorGreen(car);
+            case "Blue":
+                car = new BlueCarDecorator(car).setColorBlue(car);
+                break;
         }
+
         return car;
     }
 }
