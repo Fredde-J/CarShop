@@ -6,6 +6,9 @@ public class CarFactory {
         switch (Brand){
             case "Volkswagen":
                 car = new Volkswagen(2,5,4,25,"Gasoline","BROOM POP PANG BROM","Beetle","Black");
+                break;
+            case "Tesla":
+                car = new Tesla(4, 5, 4, 503,"Electricety",".......","Model S","Black");
 
         }
      return car;
