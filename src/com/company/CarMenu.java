@@ -35,36 +35,48 @@ public class CarMenu {
         System.out.println("You can do following things with your car");
         System.out.println("------------------------------------------");
         System.out.println("1: Start your " + brand + " " + car.model);
-        System.out.println("2: Change the color");
+        System.out.println("2: Refuel your "+ brand+" "+ car.model+" with "+ car.fuelSource);
+        System.out.println("3: Release the " + car.horsePower + "hp that the "+ car.model + " contains" );
+        System.out.println("4: change the color on the "+ car.model );
         menuChoice = scanner.next();
         switch (menuChoice) {
             case "1":
                 car.startEngine();
                 break;
-            default:
-                System.out.println("Wrong input! please try again.");
-                break;
             case "2":
-                System.out.println("choose a color you want to paint your car with");
+                car.refuelTheCar();
+                break;
+            case "3":
+                car.pedalToTheMetal();
+                break;
+            case "4":
+                System.out.println("The color of the "+car.model+" is now "+ car.color);
+                System.out.println("choose a color you want to paint your car with:");
                 System.out.println("1.Red  2.Green  3.Blue");
                 String colorChoice = scanner.next();
                 switch (colorChoice) {
                     case "1":
                         CarFactory.changeColor("Red", car);
-                        System.out.println("your car is now " + car.color);
+                        System.out.println("your "+brand+" "+car.model+" is now " + car.color);
                         break;
                     case "2":
                         CarFactory.changeColor("Green", car);
-                        System.out.println("your car is now " + car.color);
+                        System.out.println("your "+brand+" "+car.model+" is now " + car.color);
                         break;
                     case "3":
                         CarFactory.changeColor("Blue",car);
-                        System.out.println("your car is now " + car.color);
+                        System.out.println("your "+brand+" "+car.model+" is now " + car.color);
                         break;
                     default:
                         System.out.println("Wrong input");
                         break;
                 }
+                break;
+            default:
+                System.out.println("Wrong input! please try again.");
+                break;
+
+
 
         }
     }
