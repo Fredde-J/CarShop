@@ -12,11 +12,12 @@ public class Bmw extends Car {
 
     @Override
     public void refuelTheCar() {
-
+        System.out.println("The "+model+" is now filled up with "+ fuelSource);
     }
 
     @Override
-    public void pedlalToTheMetal() {
-
+    public void pedalToTheMetal() {
+        System.out.println("The "+model+" release its "+horsePower+" horsePowers. Its going pretty fast");
     }
+
 }

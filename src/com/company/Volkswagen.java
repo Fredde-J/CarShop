@@ -16,6 +16,17 @@ public class Volkswagen extends Car {
 
     @Override
     public void startEngine() {
-        System.out.println("engine starts "+ engineSound);
+        System.out.println("The "+model+" starts and make a"+ engineSound +" sound");
     }
+
+    @Override
+    public void refuelTheCar() {
+        System.out.println("The "+model+" is now filled up with "+ fuelSource);
+    }
+
+    @Override
+    public void pedalToTheMetal() {
+        System.out.println("The "+model+" release its "+horsePower+" horsePowers. Its going very slow compare to a modern car");
+    }
+
 }
