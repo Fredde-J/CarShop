@@ -1,6 +1,8 @@
 package com.company;
 
 public interface CarFunctions {
-    public void startEngine();
+     void startEngine();
+     void refuelTheCar();
+     void pedlalToTheMetal();
 
 }
