@@ -12,22 +12,25 @@ public class CarMenu {
         System.out.println("----------------------------------");
         System.out.println("1:Create a Volkswagen Beetle");
         System.out.println("2:Create a Tesla Model S");
+        System.out.println("3.Create a Bmw 530e");
         String menuChoice = scanner.next();
         String brand = "";
-        Car car = null;
+
         switch (menuChoice) {
             case "1":
                 brand = "Volkswagen";
-                car = CarFactory.buildCar(brand);
                 break;
             case "2":
                 brand = "Tesla";
-                car = CarFactory.buildCar(brand);
                 break;
+            case"3":
+                brand = "Bmw";
+
             default:
                 System.out.println("Wrong input! please try again.");
                 break;
         }
+        Car car = CarFactory.buildCar(brand);
         System.out.println("You have created a " + car.color + " " + brand + " " + car.model);
         System.out.println("You can do following things with your car");
         System.out.println("------------------------------------------");
