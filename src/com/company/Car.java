@@ -8,14 +8,16 @@ public abstract class Car implements CarFunctions {
     public String fuelSource;
     public String engineSound;
     public String model;
+    public String color;
 
-    Car(int numberOfDoors,
+    public Car(int numberOfDoors,
         int numberOfSeats,
         int numberOfWheels,
         int horsePower,
         String fuelSource,
         String engineSound,
-        String model){
+        String model,
+        String color){
         this.numberOfDoors = numberOfDoors;
         this.numberOfSeats = numberOfSeats;
         this.numberOfWheels = numberOfWheels;
@@ -23,6 +25,7 @@ public abstract class Car implements CarFunctions {
         this.fuelSource=fuelSource;
         this.engineSound=engineSound;
         this.model=model;
+        this.color=color;
     }
 
 }
