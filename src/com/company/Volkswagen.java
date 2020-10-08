@@ -8,9 +8,10 @@ public class Volkswagen extends Car {
                int horsePower,
                String fuelSource,
                String engineSound,
-               String model)
+               String model,
+               String color)
     {
-        super(numberOfDoors, numberOfSeats, numberOfWheels, horsePower, fuelSource, engineSound, model);
+        super(numberOfDoors, numberOfSeats, numberOfWheels, horsePower, fuelSource, engineSound, model, color);
     }
 
     @Override
