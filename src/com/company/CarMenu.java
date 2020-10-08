@@ -52,6 +52,18 @@ public class CarMenu {
                     case "1":
                         CarFactory.changeColor("Red", car);
                         System.out.println("your car is now " + car.color);
+                        break;
+                    case "2":
+                        CarFactory.changeColor("Green", car);
+                        System.out.println("your car is now " + car.color);
+                        break;
+                    case "3":
+                        CarFactory.changeColor("Blue",car);
+                        System.out.println("your car is now " + car.color);
+                        break;
+                    default:
+                        System.out.println("Wrong input");
+                        break;
                 }
 
         }
