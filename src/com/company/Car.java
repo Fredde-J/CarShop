@@ -11,13 +11,14 @@ public abstract class Car implements CarFunctions {
     public String color;
 
     public Car(int numberOfDoors,
-        int numberOfSeats,
-        int numberOfWheels,
-        int horsePower,
-        String fuelSource,
-        String engineSound,
-        String model,
-        String color){
+               int numberOfSeats,
+               int numberOfWheels,
+               int horsePower,
+               String fuelSource,
+               String engineSound,
+               String model,
+               String color)
+    {
         this.numberOfDoors = numberOfDoors;
         this.numberOfSeats = numberOfSeats;
         this.numberOfWheels = numberOfWheels;
@@ -27,5 +28,22 @@ public abstract class Car implements CarFunctions {
         this.model=model;
         this.color=color;
     }
+
+    @Override
+    public void startEngine() {
+
+    }
+
+    @Override
+    public void refuelTheCar() {
+
+    }
+
+    @Override
+    public void pedalToTheMetal() {
+
+    }
+
+
 
 }
