@@ -21,18 +21,18 @@ public class CarFactory {
         return car;
     }
 
-    public static Car changeColor(String color, Car car) {
+    public static void changeColor(String color, Car car) {
         switch (color) {
             case "Red":
-                car = new RedCarDecorator(car).setColorRed(car);
+                 new RedCarDecorator(car).setColorRed();
                 break;
             case "Green":
-                car = new GreenCarDecorator(car).setColorGreen(car);
+                new GreenCarDecorator(car).setColorGreen();
+                break;
             case "Blue":
-                car = new BlueCarDecorator(car).setColorBlue(car);
+                new BlueCarDecorator(car).setColorBlue();
                 break;
         }
 
-        return car;
     }
 }
