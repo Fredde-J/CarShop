@@ -20,8 +20,7 @@ public class BlueCarDecorator extends CarDecorator
     public void pedalToTheMetal() {
 
     }
-    public Car setColorBlue(Car decoratedCar){
+    public void setColorBlue(){
         decoratedCar.color="Blue";
-        return decoratedCar;
     }
 }
