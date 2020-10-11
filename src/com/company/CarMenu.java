@@ -34,6 +34,7 @@ public class CarMenu {
                 break;
             case"3":
                 brand = "Bmw";
+                break;
 
             default:
                 System.out.println("Wrong input! please try again.");
@@ -70,15 +71,15 @@ public class CarMenu {
                     switch (colorChoice) {
                         case "1":
                             CarFactory.changeColor("Red", car);
-                            System.out.println("*your "+brand+" "+car.model+" is now " + car.color+"*");
+                            System.out.println("*Your "+brand+" "+car.model+" is now " + car.color+"*");
                             break;
                         case "2":
                             CarFactory.changeColor("Green", car);
-                            System.out.println("*your "+brand+" "+car.model+" is now " + car.color+"*");
+                            System.out.println("*Your "+brand+" "+car.model+" is now " + car.color+"*");
                             break;
                         case "3":
                             CarFactory.changeColor("Blue",car);
-                            System.out.println("*your "+brand+" "+car.model+" is now " + car.color+"*");
+                            System.out.println("*Your "+brand+" "+car.model+" is now " + car.color+"*");
                             break;
                         default:
                             System.out.println("Wrong input");
