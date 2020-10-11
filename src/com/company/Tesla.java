@@ -7,7 +7,7 @@ public class Tesla extends Car {
 
     @Override
     public void startEngine() {
-        System.out.println("The "+model+" starts and make a "+ engineSound +" sound");
+        System.out.println("The "+model+" starts and make a "+ engineSound );
     }
 
     @Override
